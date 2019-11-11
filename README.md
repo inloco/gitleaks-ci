@@ -11,7 +11,8 @@ not so great for hooking into CI pipelines. **Gitleaks-CI** is 50 lines of bash 
 Review the PR like a good human.
 
 ### How to?
-Gitleaks-CI is a single line of code placed in whatever CI service you or your organization uses. (See .circleci folder for an practical example)
+Gitleaks-CI is a single line of code placed in whatever CI service you or your organization uses. (See .circleci folder for an practical example). **It's important that your project is set to "Only build pull requests"**
+
 ```
 bash <(curl -s https://raw.githubusercontent.com/inloco/gitleaks-ci/master/gitleaks.sh)
 ```
